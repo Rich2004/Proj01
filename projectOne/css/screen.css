@@ -2,6 +2,7 @@ html {
   line-height: 1.2em;
   font-family: arial;
   font-size: 1.0em;
+  font-family: 'Work Sans', sans-serif;
 }
 
 body {
@@ -74,6 +75,9 @@ label {
     cursor: pointer;
     border: 1px solid black;
   }
+  h2 {
+    font-size: 1.2em;
+  }
 }
 
 /**tablets**/
@@ -93,6 +97,9 @@ label {
     cursor: pointer;
     border: 1px solid black;
   }
+  h2 {
+    font-size: 1.3em;
+  }
 
   /**laptops**/
   @media screen and (min-width:992px) {
@@ -109,6 +116,9 @@ label {
       border-radius: 2px;
       cursor: pointer;
       border: 1px solid black;
+    }
+    h2 {
+      font-size: 1.4em;
     }
   }
 
@@ -127,5 +137,8 @@ label {
       border-radius: 2px;
       cursor: pointer;
       border: 1px solid black;
+    }
+    h2 {
+      font-size: 1.4em;
     }
   }
