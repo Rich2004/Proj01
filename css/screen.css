@@ -1,6 +1,6 @@
 body {
   background-color: #1a1a1d;
-  color:cornsilk;
+  color: cornsilk;
   padding-top: 30px;
 }
 
@@ -9,42 +9,38 @@ main {
 
 }
 
-
 label {
   display: block;
-  color:cornsilk;
-
-
+  color: cornsilk;
 }
 
 input[type="checkbox"] + label {
   display: inline;
-
 }
 
 input[type="submit"],
 input[type="reset"] {
   background-color: #950740;
-  color:cornsilk;
+  color: cornsilk;
   border-style: none;
   margin-bottom: 5px;
   display: block;
   border-radius: 3px;
-  border: 1px solid red;
-}
-input[type="submit"]:hover,input[type="reset"]:hover{
-  background-color:#c3073f;
-  color:#111a1d;
-  
+  border: 1px solid orange;
 }
 
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #c3073f;
+  color: #111a1d;
+}
 
 h1,
 h2 {
   text-align: center;
 }
 
-/**small**/
+/**small-phones**/
 
 @media (min-width:300px) {
 
@@ -74,25 +70,26 @@ h2 {
     margin: auto;
 
   }
+
   input[type="reset"] {
     width: 30%;
     margin-top: 10px;
     margin-right: 35%;
     margin-left: 35%;
   }
+
   h1 {
     font-size: 1.8em;
     font-weight: normal;
   }
+
   h2 {
     font-size: 1.2em;
     font-weight: lighter;
-
-
   }
+
   p {
     text-align: center;
-
   }
 
   .buttons {
@@ -100,10 +97,14 @@ h2 {
   }
 }
 
+/**tablets**/
+
 @media(min-width:768px) {
+
   body {
     background-color: #4e4e50;
   }
+
   main {
     background-color: #1a1a1d;
     width: 70%;
@@ -112,39 +113,43 @@ h2 {
     border-radius: 7px;
     border: 1px solid orange;
   }
+
   input[type="submit"] {
     width: 40%;
     margin: auto;
-
-
-
   }
+
   input[type="reset"] {
     width: 20%;
     margin-top: 10px;
     margin-right: 40%;
     margin-left: 40%;
   }
-
 }
 
+/**laptops**/
+
 @media(min-width:991px) {
+
   body {
-    background-color:darkslategray;
+    background-color: darkslategray;
   }
+
   form {
     width: 80%;
     margin: auto;
     text-align: left;
   }
+
   main {
-  background-color: #1a1a1d;
+    background-color: #1a1a1d;
     width: 60%;
     margin: auto;
     padding: 5px 0px;
     border-radius: 7px;
     text-align: center;
   }
+
   input[type="text"],
   input[type="tel"],
   input[type="email"] {
@@ -157,30 +162,34 @@ h2 {
     width: 30%;
     margin: auto;
   }
+
   input[type="reset"] {
     width: 20%;
     margin-top: 10px;
     margin-right: 40%;
     margin-left: 40%;
   }
-  
 }
+
+/**desk-tops**/
 
 @media(min-width:1199px) {
 
   main {
-   background-color: #1a1a1d;
+    background-color: #1a1a1d;
     width: 40%;
     margin: auto;
     padding: 5px 0px;
     border-radius: 7px;
     text-align: center;
   }
+
   form {
     width: 60%;
     margin: auto;
     text-align: left;
   }
+
   input[type="text"],
   input[type="tel"],
   input[type="email"] {
@@ -190,13 +199,14 @@ h2 {
   }
 
   input[type="submit"] {
-    width: 25%;
+    width: 30%;
     margin: auto;
-    font-size:.8em;
+    font-size: .8em;
   }
+
   input[type="reset"] {
     width: 20%;
     margin: 10px auto 5px auto;
-    font-size:.8em;
+    font-size: .8em;
   }
 }
