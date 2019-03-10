@@ -4,27 +4,41 @@
 <head>
   <title>Project_One</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" name="viewport" />
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" media="screen" href="css/screen.css" />
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
 </head>
 
 <body>
   <main>
-    <h1>Special Deals</h1>
-    <h2>Sign up to recieve codes for special offers:</h2>
-    <div class="wrapper">
-      <form>
-        <label>First Name:</label><input type="text" id="fname" name="fname" placeholder="first name" required>
-        <label>Last Name:</label><input type="text" id="lname" name="lname" placeholder="last name" required>
-        <label>Email Address:</label><input type="text" id="email" name="email_field" placeholder="email" required>
-        <input id="submit" type="submit" value="SUBMIT">
-      </form>
-    </div>
+    <h1>Screaming Good Deals</h1>
+    <h2>Sign up to recieve special offers and sales codes</h2>
+    <form id="sign_up" method="post" action="example.php">
+      <label for="fname">First Name:</label><input type="text" name="fname" id="fname" placeholder="first name" required>
+      <label for="lname">Last Name:</label><input type="text" name="lname" id="lname" placeholder="last name" required>
+      <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="jd@email.com" required>
+      <label for="tel">Phone:</label><input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
+      <p>Gender:
+        <input type="checkbox" id="male" name="male" value="male">
+        <label for="male">Male</label>
+        <input type="checkbox" id="female" name="female" value="female">
+        <label for="female">Female</label></p>
+      <div class="buttons">
+        <input id="submit" type="submit" value="SUBSCRIBE" onclick="confirm();">
+        <input id="reset" type="reset" value="CLEAR">
+      </div>
+    </form>
   </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/site.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+
+
+  </script>
+  <script src="js/site.js">
+
+
+  </script>
 </body>
 
 </html>
