@@ -5,40 +5,42 @@
   <title>Project_One</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" name="viewport" />
-  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin|Raleway|Lato|Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" media="screen" href="css/screen.css" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+
+  </script>
+  <script async src="js/site.js">
+</script>
 </head>
 
 <body>
   <main>
-    <h1>Screaming Good Deals</h1>
-    <h2>Sign up to recieve special offers and sales codes</h2>
-    <form id="sign_up" method="post" action="example.php">
+    <h1>SCREAMING GOOD DEALS</h1>
+    <h2>sign up to recieve special promo codes</h2>
+    <form id="sign_up" method="post" action="example.php" autocomplete="on">
       <label for="fname">First Name:</label><input type="text" name="fname" id="fname" placeholder="first name" required>
       <label for="lname">Last Name:</label><input type="text" name="lname" id="lname" placeholder="last name" required>
       <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="jd@email.com" required>
-      <label for="tel">Phone:</label><input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
-      <p>Gender:
-        <input type="checkbox" id="male" name="male" value="male">
-        <label for="male">Male</label>
-        <input type="checkbox" id="female" name="female" value="female">
-        <label for="female">Female</label></p>
+      <label for="tel">Phone/Optional:</label><input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
+      <div class="gender">
+        <ul>
+          <li>Gender:</li>
+          <li><input type="checkbox" id="male" name="male" value="male">
+            <label for="male">Male</label></li>
+          <li><input type="checkbox" id="female" name="female" value="female">
+            <label for="female">Female</label></li>
+        </ul>
+      </div>
       <div class="buttons">
-        <input id="submit" type="submit" value="SUBSCRIBE" onclick="confirm();">
+        <input id="submit" type="submit" value="SIGN UP" onclick="confirm();">
         <input id="reset" type="reset" value="CLEAR">
       </div>
     </form>
   </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-
-
-  </script>
-  <script src="js/site.js">
-
-
-  </script>
 </body>
 
 </html>
